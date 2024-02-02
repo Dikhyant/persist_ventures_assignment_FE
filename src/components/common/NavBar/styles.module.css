@@ -1,0 +1,68 @@
+.navBar {
+    background-color: #000000;
+}
+
+.navBar .contentContainer {
+    display: flex;
+    align-items: center;
+    
+    width: 100vw;
+
+    
+}
+
+.navBar .underLineWhileHover {
+    text-decoration: none;
+}
+
+.navBar .underLineWhileHover:hover {
+    text-decoration-color: #fff;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 499px) {
+    .navBar .contentContainer {
+        display: flex;
+        flex-direction: column;
+        height: 224.8px;
+    }
+
+    .navBar .contentContainer .navItem {
+        width: inherit;
+        height: 41px;
+        border-style: solid;
+        border-width: 0px;
+        border-top-width: 1px;
+        border-top-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .navBar .contentContainer .navItem .contentWrapper {
+        width: fit-content;
+    }
+}
+@media screen and (min-width: 500px) {
+    .navBar {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBar .contentContainer {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+    }
+    .navBar .contentContainer .navItem:nth-child(n+1) {
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 1040px) {
+    .navBar .contentContainer {
+        box-sizing: content-box;
+        width: 940px;
+    }
+}
