@@ -1,5 +1,6 @@
 .page {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #080808;
@@ -9,6 +10,20 @@
     line-height: 1.5rem;
 }
 
+#investorsSection .companyButton {
+    background: none;
+    border: none;
+}
+
+#investorsSection .companyButton img {
+    width: inherit;
+    height: inherit;
+}
+
+#investorsSection .moreText {
+    color: #fff;
+    font-weight: 400;
+}
 @media screen and (max-width: 460px) {
     .page .contentContainer {
         width: 92vw;
@@ -37,7 +52,7 @@
     }
 
     #heroSection .buttonContainer .button {
-        margin-inline: 20px;
+        margin-inline: 12px;
     }
 
     #heroSection .buttonContainer .button:nth-child(1) {
@@ -46,6 +61,10 @@
 
     #heroSection .buttonContainer .button:nth-last-child(1) {
         margin-right: 0px;
+    }
+
+    #investorsSection .sectionHeading {
+        font-size: 27px;
     }
 }
 
@@ -59,6 +78,10 @@
         width: 95vw;
         /* width: 424px;
         height: 420.825px; */
+    }
+
+    #investorsSection .sectionHeading {
+        font-size: 29px;
     }
 }
 
@@ -84,5 +107,25 @@
     #heroSection #heroImage {
         width: 346.9px;
         height: 344.288px;
+    }
+
+    #heroSection .buttonContainer .button {
+        font-size: 15px !important;
+    }
+
+    #investorsSection .buttonContainer {
+        width: 920px;
+    }
+
+    #investorsSection .sectionHeading {
+        font-size: 32px;
+    }
+
+    #investorsSection .companyButton {
+        height: 85px;
+    }
+
+    #investorsSection .moreText {
+        font-size: 28px;
     }
 }
